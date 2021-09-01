@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Портфолио Марии</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header js-header">
+	<div class="container header__inner">
+		<nav class= "menu header__menu">
+			<ul class= "menu__list list-reset js-menu__list">
+				<li class= "menu__item">
+					<a class="menu__link js-links" href="#about">Обо мне</a>
+				</li>
+				<li class= "menu__item">
+					<a class="menu__link js-links" href="#works">Работы</a>
+				</li>
+				<li class= "menu__item">
+					<a class="menu__link js-links" href="#contacts">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+   
+     <main>
+       <section class="hero">
+	<div class="hero__video-content">
+		<video class = "hero__video" src="../resources/video/video-bg-small.mp4" autoplay muted loop></video>
+	</div>
+	
+	<div class="container hero__inner">
+		<h1 class="hero__title">Привет, меня зовут Мария 
+			<span class = "hero__text-descr"> 
+				и я, <span class ="hero__big-text">front-end</span> разработчик
+			</span>
+		</h1>
+
+		<a href="../resources/Kuftina_Maria.pdf" download = "Резюме Куфтиной Марии" class = "btn hero__link"><span></span>Скачать резюме<span></span></a>
+
+		<ul class="list-reset hero__list-links">
+
+			<li class="item-links hero__item-links">
+				<a href="tel:+79152421466" class="links hero__link hero__link-phone">
+					<svg>
+						<use xlink:href = "img/sprite.svg#phone-call"/>
+					</svg>
+				</a>
+			</li>
+
+
+			<li class="item-links hero__item-links">
+				<a href="mailto:masa995@yandex.ru" class="links hero__link hero__link-email">
+					<svg>
+						<use xlink:href = "img/sprite.svg#email-open"/>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+       <section class="about" id="about">
+	<div class="container about__inner">
+		<h2 class="title">Обо мне</h2>
+
+		<ul class="about__list list-reset">
+			<li class="about__item">
+				<div class="about__img">
+					<svg>
+						<use xlink:href = "img/sprite.svg#html"/>
+					</svg>
+				</div>
+				<div class="about__content">
+					<p class="about__text">Для верстки использую методологию БЭМ, умею верстать адаптивные и&nbsp;кроссбраузерные страницы</p>
+				</div>
+			</li>
+
+			<li class="about__item">
+				<div class="about__img">
+					<svg>
+						<use xlink:href = "img/sprite.svg#js"/>
+					</svg>
+				</div>
+				<div class="about__content">
+					<p class="about__text">Знаю стандарт JavaScript ES6, JQuery и&nbsp;основанные на&nbsp;них плагины</p>
+				</div>
+			</li>
+
+			<li class="about__item">
+				<div class="about__img">
+					<svg>
+						<use xlink:href = "img/sprite.svg#css"/>
+					</svg>
+				</div>
+				<div class="about__content">
+					<p class="about__text">Разбираюсь в&nbsp;flexbox, CSS анимация, и&nbsp;работаю с&nbsp;препроцессором SCSS</p>
+				</div>
+			</li>
+
+			<li class="about__item">
+				<div class="about__img">
+					<svg>
+						<use xlink:href = "img/sprite.svg#tools"/>
+					</svg>
+				</div>
+				<div class="about__content">
+					<p class="about__text">Работаю с&nbsp;Gulp, Git и GitHub</p>
+				</div>
+			</li>
+
+			<li class="about__item">
+				<div class="about__img">
+					<svg>
+						<use xlink:href = "img/sprite.svg#react"/>
+					</svg>
+				</div>
+				<div class="about__content">
+					<p class="about__text">Изучаю React</p>
+				</div>
+			</li>
+
+			<li class="about__item">
+				<div class="about__img">
+					<svg>
+						<use xlink:href = "img/sprite.svg#psd"/>
+					</svg>
+				</div>
+				<div class="about__content">
+					<p class="about__text">Для работы с&nbsp;макетами использую&nbsp;PS и Figma</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+       <section class="works" id="works">
+	<div class="container works__inner">
+		<h2 class="title">Работы</h2>
+
+		<ul class="list-reset works__list">
+			<li class="works__item">
+				<div class="works__box">
+					<div class="works__img-box">
+						<div class="works__img-big-box">
+							<img src="../img/work1-big.jpg" alt="Изображение первого фрагмента работы">
+						</div>
+						<img class="works__img-middle-box" src="../img/work1-middle.jpg" alt="Изображение второго фрагмента работы">
+
+						<img class="works__img-small-box" src="../img/work1-small.jpg" alt="Изображение третьего фрагмента работы">	
+					</div>
+
+					<div class="works__text-box">
+						<p class="works__text">Данная работа является дипломным проектом курса
+						“Веб-верстка для начинающих 2.0” Skillbox. В работе 
+						реализована форма обратной связи, отправка данных 
+						на почту, слайдер и адаптация страницы под 
+						мобильные устройства с помощью JQuery.</p>
+
+						<ul class="list-reset works__list-links">
+							<li class="item-links works__item-links">
+								<a href="" class="links works__links">
+									<svg>
+										<use xlink:href = "img/sprite.svg#link"/>
+									</svg>
+								</a>
+							</li>
+
+							<li class="item-links works__item-links">
+								<a href="" class="links 
+								works__links">
+									<svg>
+										<use xlink:href = "img/sprite.svg#github"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+
+			<li class="works__item">
+				<div class="works__box">
+					<div class="works__img-box">
+						<div class="works__img-big-box">
+							<img src="../img/work2-big.jpg" alt="Изображение первого фрагмента работы">
+						</div>
+						<img class="works__img-middle-box" src="../img/work2-middle.jpg" alt="Изображение второго фрагмента работы">
+
+						<img class="works__img-small-box" src="../img/work2-small.jpg" alt="Изображение третьего фрагмента работы">	
+					</div>
+
+					<div class="works__text-box">
+						<p class="works__text">Для работы я сделала свою собственную 
+						полноэкранную прокрутку на основе JQuery. Выполнила валидацию формы. Сделала аккордеон, слайдер,
+						анимацию элементов.</p>
+
+						<ul class="list-reset works__list-links">
+							<li class="item-links works__item-links">
+								<a href="" class="links works__links">
+									<svg>
+										<use xlink:href = "img/sprite.svg#link"/>
+									</svg>
+								</a>
+							</li>
+
+							<li class="item-links works__item-links">
+								<a href="" class="links works__links">
+									<svg>
+										<use xlink:href = "img/sprite.svg#github"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+
+			<li class="works__item">
+				<div class="works__box">
+					<div class="works__img-box">
+						<div class="works__img-big-box">
+							<img src="../img/work3-big.jpg" alt="Изображение первого фрагмента работы">
+						</div>
+						
+						<img class="works__img-middle-box" src="../img/work3-middle.jpg" alt="Изображение второго фрагмента работы">
+
+						<img class="works__img-small-box" src="../img/work3-small.jpg" alt="Изображение третьего фрагмента работы">	
+					</div>
+
+					<div class="works__text-box">
+						<p class="works__text">Я сделала настройку двух слайдеров и воспроизведение 
+						видео. Также разработала модальное окно, в котором автоматически меняется описание программ
+						в зависимости  от выбора пользователя. Все реализовано 
+						с помощью JavaScript.</p>
+
+						<ul class="list-reset works__list-links">
+							<li class="item-links works__item-links">
+								<a href="" class="links works__links">
+									<svg>
+										<use xlink:href = "img/sprite.svg#link"/>
+									</svg>
+								</a>
+							</li>
+
+							<li class="item-links works__item-links">
+								<a href="" class="links works__links">
+									<svg>
+										<use xlink:href = "img/sprite.svg#github"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+       <section class="contacts" id="contacts">
+	<div class="container contacts__inner">
+		<h2 class="title">Контакты</h2>
+
+	
+ 		<div class="swiper slider">
+			<div class="swiper-wrapper slider__wrapper"> 
+			    <div class="swiper-slide slider__slide">
+					<form class="contacts__form form js-form" action="#"  enctype= "application/x-www-form-urlencoded" method="post"> 
+						<label class="form__label">
+							<input class="form__input" type="text" name ="name" placeholder="Ваше имя" id ="name" data-validate-field ="name">
+						</label>
+						
+						<label class="form__label">
+							<input class="form__input" type="email" name ="email" placeholder="Ваша почта" id ="email" data-validate-field ="email">
+						</label>
+						
+						<label class="form__label">
+							<textarea class="form__textarea" name="text"  placeholder="Сообщение" id="text" cols="30"rows="7" data-validate-field ="text"></textarea>
+						</label>
+
+						<button class="btn-reset form__submit" type = "submit"><span></span>Отправить<span></span></button>
+					</form>
+				</div>
+
+			    <div class="swiper-slide slider__slide">
+			    	<address class="contacts__address">
+						<a href="tel:+79152421466" class="contacts__link contacts__link-phone">+7 (915) 242–14–66</a>
+
+						<a href="mailto:masa995@yandex.ru" class="contacts__link contacts__link-email">masa995@yandex.ru</a>
+					</address>
+			    </div>
+			</div>
+		</div>
+
+		<div class="slider__btn-box">
+			<button class="btn-reset slider__btn btn-left ">
+				<svg>
+					<use xlink:href = "img/sprite.svg#left"/>
+				</svg>
+			</button>
+		
+			<button class="btn-reset slider__btn btn-right">
+				<svg>
+					<use xlink:href = "img/sprite.svg#right"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
+     </main>
+
+     <footer class="footer">
+	<p class= "footer__copyright-text">&#169; Портфолио Марии Куфтиной 2021</p>
+</footer>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

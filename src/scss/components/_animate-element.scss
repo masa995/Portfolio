@@ -1,0 +1,40 @@
+@keyframes neon-one {
+    0%, 100%{
+    box-shadow: 0 0 3px 1px var(--white-color) inset,
+				0 0 4px 1px var(--white-color) inset,
+				0 0 10px 0px var(--white-color) inset,
+				0 0 3px 1px var(--white-color),
+				0 0 4px 1px var(--white-color),
+				0 0 10px 0px var(--white-color);
+	}
+
+	30%{
+	 box-shadow: 0 0 3px 1px var(--white-color) inset,
+	 			0 0 15px 1px var(--cyan-color) inset,
+	 			0 0 25px 0px var(--cyan-color) inset,
+				0 0 3px 1px var(--white-color),
+				0 0 15px 1px var(--cyan-color),
+	 			0 0 25px 0px var(--cyan-color);
+	}
+}
+
+@keyframes neon-two {
+    0%, 50%, 100%{
+    box-shadow: 0 0 3px 1px var(--white-color) inset,
+				0 0 5px 1px var(--white-color) inset,
+				0 0 7px 0px var(--white-color) inset,
+				0 0 3px 1px var(--white-color),
+				0 0 5px 1px var(--white-color),
+				0 0 7px 0px var(--white-color);
+	}
+
+	25%, 75%{
+	 box-shadow: 0 0 3px 1px var(--white-color) inset,
+	 			0 0 10px 1px var(--gold-color) inset,
+	 			0 0 20px 0px var(--gold-color) inset,
+				0 0 3px 1px var(--white-color),
+				0 0 10px 1px var(--gold-color),
+	 			0 0 20px 0px var(--gold-color);
+	}
+}
+

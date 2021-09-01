@@ -1,0 +1,16 @@
+@import "vars";
+@import "mixin";
+@import "fonts";
+@import "settings";
+@import "repeat-elem";
+
+//components
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/works";
+@import "./components/contacts";
+@import "./components/footer";
+
+@import "./components/animate-element";
+@import "./media";

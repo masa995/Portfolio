@@ -1,0 +1,50 @@
+<section class="contacts" id="contacts">
+	<div class="container contacts__inner">
+		<h2 class="title">Контакты</h2>
+
+	
+ 		<div class="swiper slider">
+			<div class="swiper-wrapper slider__wrapper"> 
+			    <div class="swiper-slide slider__slide">
+					<form class="contacts__form form js-form" action="#"  enctype= "application/x-www-form-urlencoded" method="post"> 
+						<label class="form__label">
+							<input class="form__input" type="text" name ="name" placeholder="Ваше имя" id ="name" data-validate-field ="name">
+						</label>
+						
+						<label class="form__label">
+							<input class="form__input" type="email" name ="email" placeholder="Ваша почта" id ="email" data-validate-field ="email">
+						</label>
+						
+						<label class="form__label">
+							<textarea class="form__textarea" name="text"  placeholder="Сообщение" id="text" cols="30"rows="7" data-validate-field ="text"></textarea>
+						</label>
+
+						<button class="btn-reset form__submit" type = "submit"><span></span>Отправить<span></span></button>
+					</form>
+				</div>
+
+			    <div class="swiper-slide slider__slide">
+			    	<address class="contacts__address">
+						<a href="tel:+79152421466" class="contacts__link contacts__link-phone">+7 (915) 242–14–66</a>
+
+						<a href="mailto:masa995@yandex.ru" class="contacts__link contacts__link-email">masa995@yandex.ru</a>
+					</address>
+			    </div>
+			</div>
+		</div>
+
+		<div class="slider__btn-box">
+			<button class="btn-reset slider__btn btn-left ">
+				<svg>
+					<use xlink:href = "img/sprite.svg#left"/>
+				</svg>
+			</button>
+		
+			<button class="btn-reset slider__btn btn-right">
+				<svg>
+					<use xlink:href = "img/sprite.svg#right"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
