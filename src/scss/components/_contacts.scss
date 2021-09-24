@@ -30,6 +30,7 @@
 }
 
 .form{
+	position:relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -38,7 +39,6 @@
 	&__textarea{
 		width: 370px;
 		padding: 15px 25px;
-		margin-bottom: 20px;
 		border-radius: 10px;
 		color: var(--white-color);
 		font-family: "Computer", sans-serif;
@@ -73,17 +73,26 @@
 
 	&__label {
 		position: relative;
+		margin-bottom: 20px;
+	}
+
+	&__error{
+		position: absolute;
+		bottom: 10%;
+		left: 5px;
+		font-size: 16px;
+    	color: var(--gold-color)!important;
 	}
 }
 
 .slider{
 	max-width: 700px;
-	background-image: url('../../img/retro-computer.png');
+	background-image: url('../img/retro-computer.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 	padding-top: 135px;
-	padding-bottom: 300px;
+	padding-bottom: 320px;
 
 	&__slide{
 		display: flex;

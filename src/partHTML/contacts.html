@@ -3,7 +3,7 @@
 		<h2 class="title">Контакты</h2>
 
 	
- 		<div class="swiper slider">
+ 		<div class="swiper-container slider">
 			<div class="swiper-wrapper slider__wrapper"> 
 			    <div class="swiper-slide slider__slide">
 					<form class="contacts__form form js-form" action="#"  enctype= "application/x-www-form-urlencoded" method="post"> 
@@ -18,6 +18,8 @@
 						<label class="form__label">
 							<textarea class="form__textarea" name="text"  placeholder="Сообщение" id="text" cols="30"rows="7" data-validate-field ="text"></textarea>
 						</label>
+
+						<span class="form__error"></span>
 
 						<button class="btn-reset form__submit" type = "submit"><span></span>Отправить<span></span></button>
 					</form>
