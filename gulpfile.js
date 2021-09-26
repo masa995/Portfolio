@@ -75,35 +75,35 @@ function stylesBuild() {
 		.pipe(dest('./app/css/'))
 }
 
-function scripts () {
+function scripts() {
 	src(['./src/js/plugins/**.js', 'node_modules/swiper/swiper-bundle.min.js'])
 		.pipe(concat('plugins.js'))
 		.pipe(dest('./app/js/'))
-  return src(
-    	['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
-	   	.pipe(sourcemaps.init()) 
-		.pipe(babel({ 
-				presets: ['@babel/env']
-			}))
-	    .pipe(concat('main.js'))
-	   	.pipe(uglify()) 
-	    .pipe(sourcemaps.write('.'))
-	    .pipe(dest('./app/js'))
-	    .pipe(browserSync.stream());
+	return src(
+		['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
+		.pipe(sourcemaps.init())
+		.pipe(babel({
+			presets: ['@babel/env']
+		}))
+		.pipe(concat('main.js'))
+		.pipe(uglify())
+		.pipe(sourcemaps.write('.'))
+		.pipe(dest('./app/js'))
+		.pipe(browserSync.stream());
 }
 
 function scriptsBuild() {
 	src(['./src/js/plugins/**.js', 'node_modules/swiper/swiper-bundle.min.js'])
 		.pipe(concat('plugins.js'))
 		.pipe(dest('./app/js/'))
-  return src(
-    	['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
+	return src(
+		['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
 		.pipe(babel({
-				presets: ['@babel/env']
-			}))
-	    .pipe(concat('main.js'))
-	   	.pipe(uglify()) 
-	    .pipe(dest('./app/js'))
+			presets: ['@babel/env']
+		}))
+		.pipe(concat('main.js'))
+		.pipe(uglify())
+		.pipe(dest('./app/js'))
 }
 
 function imagesWebp() {
@@ -152,7 +152,6 @@ function imagesBuild() {
 			})
 		]))
 		.pipe(dest('app/img'))
-		.pipe(browserSync.stream());
 }
 
 //sprite svg
