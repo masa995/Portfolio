@@ -1,11 +1,11 @@
-.contacts{
+.contacts {
 	padding: 70px 0 20px;
 
-	&__inner{
+	&__inner {
 		position: relative;
 	}
 
-	&__address{
+	&__address {
 		font-family: "Computer", sans-serif;
 		font-style: normal;
 		font-weight: 700;
@@ -13,30 +13,29 @@
 		margin: 30px auto;
 	}
 
-	&__link:not(:last-child){
+	&__link:not(:last-child) {
 		margin-bottom: 20px;
 	}
 
-	&__link{
+	&__link {
 		position: relative;
 		display: block;
-		transition: transform .5s ease;
+		transition: transform 0.5s ease;
 	}
 
-
-	&__link:hover{
+	&__link:hover {
 		transform: scale(1.2);
 	}
 }
 
-.form{
-	position:relative;
+.form {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	&__input,
-	&__textarea{
+	&__textarea {
 		width: 370px;
 		padding: 15px 25px;
 		border-radius: 10px;
@@ -48,21 +47,21 @@
 	}
 
 	&__input::placeholder,
-	&__textarea::placeholder{
+	&__textarea::placeholder {
 		font-weight: 700;
 		font-size: 17px;
 		color: #999;
 	}
 
-	&__textarea{
+	&__textarea {
 		resize: none;
 	}
 
-	&__submit{
+	&__submit {
 		font-family: "Computer", sans-serif;
 		font-size: 25px;
 		font-weight: 900;
-		transition: transform .5s ease;
+		transition: transform 0.5s ease;
 		color: var(--white-color);
 		padding: 5px;
 
@@ -76,31 +75,31 @@
 		margin-bottom: 20px;
 	}
 
-	&__error{
+	&__message {
 		position: absolute;
 		bottom: 10%;
 		left: 5px;
 		font-size: 16px;
-    	color: var(--gold-color)!important;
+		color: var(--gold-color) !important;
 	}
 }
 
-.slider{
+.slider {
 	max-width: 700px;
-	background-image: url('../img/retro-computer.png');
+	background-image: url("../img/retro-computer.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 	padding-top: 135px;
 	padding-bottom: 320px;
 
-	&__slide{
+	&__slide {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
-	&__btn-box{
+	&__btn-box {
 		position: absolute;
 		bottom: 23.5%;
 		left: 50%;
@@ -108,7 +107,7 @@
 		z-index: 5;
 	}
 
-	&__btn{
+	&__btn {
 		width: 35px;
 		height: 33px;
 		cursor: pointer;
@@ -120,20 +119,19 @@
 			object-fit: cover;
 			display: block;
 			fill: var(--white-color);
-            filter: drop-shadow( 0px 0px 5px var(--gold-color));
-            transition: fill .5s ease;
+			filter: drop-shadow(0px 0px 5px var(--gold-color));
+			transition: fill 0.5s ease;
 
-            &:hover {
-            	fill: var(--gold-color);
-            }
-
+			&:hover {
+				fill: var(--gold-color);
+			}
 		}
 	}
 }
 
-.swiper-button-disabled{
-	svg{
+.swiper-button-disabled {
+	svg {
 		filter: none;
-		fill: rgba(225, 225, 225, 0.6)
+		fill: rgba(225, 225, 225, 0.6);
 	}
 }

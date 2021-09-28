@@ -1,9 +1,10 @@
-const formError = document.querySelector('.form__error');
+const form = document.querySelector('.js-form')
+const formMessage = document.querySelector('.form__message');
 
-function validateForm (selector){
-  new window.JustValidate(selector,{
+function validateForm(selector) {
+  new window.JustValidate(selector, {
     rules: {
-      name : {
+      name: {
         required: true
       },
 
@@ -33,31 +34,31 @@ function validateForm (selector){
     },
 
     submitHandler: function (form) {
-     
+
       const formData = new FormData(form);
 
       const response = fetch('resources/mail.php', {
-          method: 'POST',
-          body: formData,
+        method: 'POST',
+        body: formData,
       })
-      .then(
-        (response) => { 
-          if(response.ok){
-            return response.text();
-          }
+        .then(
+          (response) => {
+            if (response.ok) {
+              return response.text();
+            }
+          })
+        .then((result) => {
+          formMessage.textContent = result;
+          setTimeout(() => formMessage.textContent = ' ', 12000);
         })
-      .then((result) => {
-        formError.textContent = result;
-      })
-      .catch((e) => {
-        console.error(e);
-        formError.textContent = "Ошибка";
-      });
-      
+        .catch((e) => {
+          console.error(e);
+          formMessage.textContent = 'Ошибка';
+
+          setTimeout(() => formMessage.textContent = ' ', 12000);
+        })
       form.reset();
-    },
+    }
   });
 }
-
-
 validateForm('.js-form');
