@@ -1,14 +1,14 @@
-.about{
+.about {
 	padding: 70px 0 70px;
 
-	&__list{
+	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin: 0 0 -60px;
 	}
 
-	&__item{
+	&__item {
 		flex: 0 0 30%;
 		display: flex;
 		flex-direction: column;
@@ -17,16 +17,15 @@
 		margin-bottom: 60px;
 	}
 
-
-	&__item:nth-child(odd) .about__img{
+	&__item:nth-child(odd) .about__img {
 		animation: neon-one 5s linear infinite;
 	}
 
-	&__item:nth-child(even) .about__img{
+	&__item:nth-child(even) .about__img {
 		animation: neon-two 5s linear infinite;
 	}
 
-	&__img{
+	&__img {
 		box-sizing: content-box;
 		width: 65px;
 		height: 65px;
@@ -44,11 +43,10 @@
 		}
 	}
 
-	&__text{
+	&__text {
 		font-size: 20px;
 		font-weight: 400;
 		text-align: center;
 		max-width: 250px;
 	}
 }
-
